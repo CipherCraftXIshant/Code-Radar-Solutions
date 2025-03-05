@@ -1,4 +1,5 @@
 // Your code here...
+// Nice question
 #include<stdio.h>
 int main(){
     float a;
