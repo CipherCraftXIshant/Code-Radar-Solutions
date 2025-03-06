@@ -1,4 +1,5 @@
 // Your code here...
+// Nice Question
 #include<stdio.h>
 int main(){
     int n;
