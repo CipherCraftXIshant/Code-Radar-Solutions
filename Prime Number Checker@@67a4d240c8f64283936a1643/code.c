@@ -12,4 +12,3 @@ int isPrime(int N) {
     }
     return 1;
 }
-q2
