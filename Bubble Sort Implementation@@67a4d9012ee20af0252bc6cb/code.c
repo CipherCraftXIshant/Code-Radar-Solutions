@@ -24,4 +24,3 @@ int printArray(int arr[],int n)
         printf("%d ",arr[i]);
     }
 }
-q1
