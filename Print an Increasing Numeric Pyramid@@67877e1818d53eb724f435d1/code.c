@@ -13,6 +13,3 @@ int main(){
         printf("\n");
     }
 }
-
- 1
-1 2
