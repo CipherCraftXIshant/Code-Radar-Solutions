@@ -26,7 +26,7 @@ int main() {
                 result = (float)num1 / num2;
                 printf("%d\n", result);
             } else {
-                printf("Error \n");
+                printf("error \n");
             }
             break;
     }
