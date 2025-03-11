@@ -7,7 +7,7 @@ int main() {
 
     switch(c) {
         case 'R':
-            printf("Stoop\n");
+            printf("Stop\n");
             break;
         case 'G':
             printf("Go\n");
