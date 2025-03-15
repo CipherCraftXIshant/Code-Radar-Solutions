@@ -22,7 +22,7 @@ int main() {
     int n, k;
     
     // Reading the size of the array
-    scanf("%d", &n);
+    scanf("%d ", &n);
     int arr[n];
     
     // Reading the array elements
