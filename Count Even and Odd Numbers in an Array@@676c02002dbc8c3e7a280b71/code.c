@@ -3,8 +3,6 @@
 
 int main() {
     int n, i, even_count = 0, odd_count = 0;
-    
-    // Taking the total number of elements as input
     scanf("%d", &n);
 
     int arr[n]; // Declaring an array of size 'n'
