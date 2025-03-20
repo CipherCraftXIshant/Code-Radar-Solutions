@@ -5,7 +5,7 @@ int main() {
     int n, i, even_count = 0, odd_count = 0;
     scanf("%d", &n);
 
-    int arr[n]; // Declaring an array of size 'n'
+    int arr[n]; 
     
     // Taking user input for the array elements
     for(i = 0; i < n; i++) {
