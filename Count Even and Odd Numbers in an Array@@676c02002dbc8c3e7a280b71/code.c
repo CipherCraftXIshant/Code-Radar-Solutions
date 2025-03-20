@@ -12,13 +12,11 @@ int main() {
     }
     for(i = 0; i < n; i++) {
         if(arr[i] % 2 == 0) {
-            even_count++; // Increment even count
+            even_count++; 
         } else {
-            odd_count++;  // Increment odd count
+            odd_count++; 
         }
     }
-
-    // Displaying the results
     printf("%d %d", even_count,odd_count);
 
     return 0;
