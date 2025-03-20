@@ -7,12 +7,9 @@ int main() {
 
     int arr[n]; 
     
-    // Taking user input for the array elements
     for(i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
-    // Checking each element for even or odd
     for(i = 0; i < n; i++) {
         if(arr[i] % 2 == 0) {
             even_count++; // Increment even count
