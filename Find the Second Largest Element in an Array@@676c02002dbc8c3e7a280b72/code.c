@@ -1,11 +1,7 @@
-// Your code here...
 #include <stdio.h>
+
 void findSecondLargest(int arr[], int size) {
-    if (size < 2) {
-        printf("Array must have at least two elements.\n");
-        return;
-    }
-    int largest = arr[0], secondLargest = -1;
+    int largest = arr[0], secondLargest = arr[0];
 
     for (int i = 1; i < size; i++) {
         if (arr[i] > largest) {
@@ -15,27 +11,25 @@ void findSecondLargest(int arr[], int size) {
             secondLargest = arr[i];
         }
     }
-    for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
-    }
-    printf("\n");
 
-            }
+    printf("%d\n", size); 
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]); 
+    }
+    printf("\n%d\n", secondLargest); 
+}
 
 int main() {
     int size;
     scanf("%d", &size);
+    
+    int arr[size];
 
-    if (size < 2) {
-        printf("Array must have at least two elements.\n");
-        return 0;
-    }
-
-    int arr[size];       
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
     }
 
     findSecondLargest(arr, size);
+
     return 0;
 }
