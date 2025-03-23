@@ -1,5 +1,6 @@
 // Your code here...
 // nice question
+// easy one
 #include <stdio.h>
 
 int main() {
