@@ -10,20 +10,9 @@ long long factorial(int num) {
     return fact;
 }
 
-int main() {
-    int start, end;
-    
-    // Taking input from user
-    scanf("%d %d", &start,&end);
-
-    if (start > end || start < 0) {
-        return 0;
-    }
-
-    // Calculate factorial for each number in the range
+// Function to print factorial of each number in range
+void factorialRange(int start, int end) {
     for (int i = start; i <= end; i++) {
-        printf("%lld\n", factorial(i));
+        printf("Factorial of %d = %lld\n", i, factorial(i));
     }
-
-    return 0;
 }
