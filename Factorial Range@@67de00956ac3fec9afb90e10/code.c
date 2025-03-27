@@ -13,6 +13,6 @@ long long factorial(int num) {
 // Function to print factorial of each number in range
 void factorialRange(int start, int end) {
     for (int i = start; i <= end; i++) {
-        printf("Factorial of %d = %lld\n", i, factorial(i));
+        printf("%d\n",factorial(i));
     }
 }
