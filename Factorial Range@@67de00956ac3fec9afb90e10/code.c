@@ -10,12 +10,13 @@ long long factorial(int num) {
     return fact;
 }
 
-// Function to print factorial of each number in the given range (positive numbers only)
+// Function to print factorial of each number in the given range
 void factorialRange(int start, int end) {
-    if (start < 1) {
-        start = 1;  // Ensure the range starts from 1 (smallest positive integer)
+    if (start < 0) {
+        printf("Invalid range\n");
+        return;
     }
-    
+
     for (int i = start; i <= end; i++) {
         printf("%d\n",factorial(i));
     }
