@@ -7,9 +7,9 @@ int main(){
         if(n%d==0){
             j=0;
             break;
-                }
+    }
 }
-    if(j=1){
+    if(j==1){
         printf("Prime");
     }
     else{
