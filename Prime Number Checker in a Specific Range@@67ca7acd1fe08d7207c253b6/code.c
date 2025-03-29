@@ -1,19 +1,29 @@
 // Your code here...
-int printPrimesInRange(int a,int b){
-    int count,n=0;
-    for(int i=a; i<=b; i++){
-        count=0;
-        for(int j=2; j<=i; j++){
-            if(i%j==0){
-                count++;
-            }
-        }
-        if(count==1){
-            n++;
-            printf("%d ",i);
-        }
+#include <stdio.h>
+
+int isPrime(int num) 
+{
+    if (num < 2) 
+        return 0;
+    for (int i = 2; i * i <= num; i++) 
+    {
+        if (num % i == 0) 
+            return 0;
     }
-    if(n==0){
+    return 1;
+}
+
+void printPrimesInRange(int start, int end) 
+{
+    int c=0;
+    for (int i = start; i <= end; i++) 
+    {
+        if (isPrime(i))
+        {
+            printf("%d ", i);
+            c++;
+        } 
+    }
+    if(!c)
         printf("No prime numbers");
-    }
 }
