@@ -1,20 +1,13 @@
 // Your code here...
-// nice question
 #include <stdio.h>
+int f=0,f1=0,f2=1;
 
-int fibonacci_recursive(int n) {
-    if (n == 0) return 0;
-    if (n == 1) return 1;
-    return fibonacci_recursive(n - 1) + fibonacci_recursive(n - 2);
-}
-
-int main() {
-    int n;
-    scanf("%d", &n);
-    for (int i = 0; i < n; i++) {
-        printf("%d ", fibonacci_recursive(i));
+int fibonacciSeries(int n){
+    if(n>0){
+        printf("%d ",f);
+        f=f1+f2;
+        f2=f1;
+        f1=f;
+        fibonacciSeries(n-1);
     }
-    printf("\n");
-    
-    return 0;
 }
