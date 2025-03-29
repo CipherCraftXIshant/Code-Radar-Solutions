@@ -1,16 +1,26 @@
 // Your code here...
-#define MAX 99999999
+void swap(int *a, int *b) 
+{
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
 
-int kthSmallest(int arr[], int n, int k){
-    int min, min_i,i;
-    if (k>n) return -1;
-    while (k--)
+int kthSmallest(int ary[], int n, int k) 
+{
+    if (n == 0 || k <= 0 || k > n)  
+        return -1;
+    for (int i = 0; i < k; i++) 
     { 
-        min=MAX;
-        for(i=0;i<n;i++) {
-            if (min>arr[i]) min=arr[i], min_i=i;
+        int minIndex = i;
+        for (int j = i + 1; j < n; j++) 
+        {
+            if (ary[j] < ary[minIndex]) 
+            {
+                minIndex = j;
+            }   
         }
-        arr[min_i]=MAX;
+        swap(&ary[i], &ary[minIndex]);
     }
-    return min;
-}   
+    return ary[k - 1]; 
+}
