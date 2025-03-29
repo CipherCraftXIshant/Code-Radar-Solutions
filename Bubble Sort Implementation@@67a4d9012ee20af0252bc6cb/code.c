@@ -3,9 +3,9 @@
 
 int bubbleSort(int arr[],int n)
 {
-    for(int r=0;r<n;r++)
+    for(int r=0;r<n-1;r++)
     {
-        for(int c=0;c<n-1-r;c++)
+        for(int c=0;c<n-i-1;c++)
         {
             if(arr[c]>arr[c+1])
             {
