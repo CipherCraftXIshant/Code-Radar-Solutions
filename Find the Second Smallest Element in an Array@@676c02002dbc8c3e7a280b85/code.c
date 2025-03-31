@@ -27,7 +27,7 @@ int main(){
             }
         }
         if(val){
-            arr[i]=res[c];
+            res[c]=arr[i];
             c++;
         }
     }
