@@ -33,6 +33,7 @@ int main(){
     }
     if(c<2){
         printf("-1\n");
+        return 0;
     }
     bubbleSort(res,c);
     printf("%d",res[1]);
