@@ -12,14 +12,29 @@ void bubbleSort(int arr[n], int n){
     }
 }
 int main(){
-    int n;
+    int n,c=0,val=1;
     scanf("%d",&n);
-    int arr[n];
+    int arr[n], res[n];
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    bubbleSort(arr,n);
-    int smallest=arr[0];
-    int secondsmallest = arr[1];
-    printf("%d",secondsmallest);
+    for(int i=0;i<n;i++){
+        val=1;
+        for(int j=0;j<c;j++){
+            if(arr[i]==res[j]){
+                val =0;
+                break;
+            }
+        }
+        if(val){
+            arr[i]=res[c];
+            c++;
+        }
+    }
+    if(c<2){
+        printf("-1\n");
+    }
+    bubbleSort(res,c);
+    printf("%d",res[1]);
+    return 0;
 }
