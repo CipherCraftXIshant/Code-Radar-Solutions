@@ -10,7 +10,7 @@ int kthSmallest(int ary[], int n, int k)
 {
     if (n == 0 || k <= 0 || k > n)  
         return -1;
-    for (int i = 0; i < k-1; i++) 
+    for (int i = 0; i < k; i++) 
     { 
         int minIndex = i;
         for (int j = i + 1; j < n; j++) 
@@ -22,5 +22,5 @@ int kthSmallest(int ary[], int n, int k)
         }
         swap(&ary[i], &ary[minIndex]);
     }
-    return ary[k]; 
+    return ary[k - 1]; 
 }
