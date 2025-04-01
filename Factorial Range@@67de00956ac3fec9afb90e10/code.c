@@ -1,23 +1,19 @@
 // Your code here...
-#include <stdio.h>
 
-// Function to calculate factorial of a number
-long long factorial(int num) {
-    long long fact = 1;
-    for (int i = 1; i <= num; i++) {
-        fact *= i;
-    }
-    return fact;
-}
-
-// Function to print factorial of each number in the given range
-void factorialRange(int start, int end) {
-    if (start < 0) {
-        printf("Invalid range\n");
+void factorialRange(int start, int end) 
+{
+    if(start < 0 || start > end)
+    {
+        printf("Invalid range");
         return;
     }
-
-    for (int i = start; i <= end; i++) {
-        printf("%d\n",factorial(i));
+    for (int i = start; i <= end; i++) 
+    {
+        int fact = 1;
+        for (int j = 1; j <= i; j++) 
+        {
+            fact *= j;
+        }
+        printf("%d\n",fact);
     }
 }
