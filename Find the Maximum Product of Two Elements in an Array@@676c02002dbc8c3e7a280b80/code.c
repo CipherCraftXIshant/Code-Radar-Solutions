@@ -20,9 +20,16 @@ int main(){
         scanf("%d",&arr[i]);
     }
     bubbleSort(arr,n);
-    int l = arr[n-1];
-    int s = arr[n-2];
-    int product = l*s;
-    printf("%d",product);
+    
+    int product1 = arr[n - 1] * arr[n - 2];
+    int product2 = arr[0] * arr[1];
+    int max_product;
+    if(product1>product2){
+        max_product=product1;
+    }
+    else{
+        max_product=product2;
+    }
+    printf("%d",max_product);
     return 0;
 }
