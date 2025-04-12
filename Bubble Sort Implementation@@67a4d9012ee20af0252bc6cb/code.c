@@ -1,4 +1,4 @@
-//write your cod
+//write your co
 #include <stdio.h>
 
 int bubbleSort(int arr[],int n)
