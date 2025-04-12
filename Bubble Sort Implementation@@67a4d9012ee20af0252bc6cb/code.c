@@ -1,4 +1,4 @@
-//wri
+//write your code here
 #include <stdio.h>
 
 int bubbleSort(int arr[],int n)
