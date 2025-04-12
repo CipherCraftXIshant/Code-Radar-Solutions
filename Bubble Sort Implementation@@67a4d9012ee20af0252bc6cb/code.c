@@ -1,4 +1,4 @@
-//write your 
+//write you
 #include <stdio.h>
 
 int bubbleSort(int arr[],int n)
