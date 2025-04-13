@@ -1,2 +1,2 @@
 //// Your code here...
-This is god
+This is good
